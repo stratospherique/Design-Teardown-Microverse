@@ -3,17 +3,15 @@
 }
 
 #container {
-    display: grid;
+	display: grid;
+	position: relative;
     /* height:2000px; */
    /*  grid-auto-rows: 80px 2000px 100px; */
     /* grid-template-rows: 80px 2000px 100px; */
     grid-template-rows: 160px auto 550px;
 }
 
-#container>div{
-    background:rgb(66, 66, 66);
-    border: 2px solid red;
-}
+
 
 #header{
 	display:grid;
@@ -24,18 +22,11 @@
 
 
 [class*="col-"]{
-	background: rgb(115, 115, 116);
+	background:	#DCDCDC;
 	border:1px solid black;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-[class*="col-"] h1 {
-	grid-column: 3/6;
-	grid-row: 3/5;
-	border:1px solid blue;
-	background: rgb(98, 99, 99);
 }
 
 h1	{
@@ -58,7 +49,7 @@ p{
 
 .square{
 
-	background: lightgrey;
+	background:#D3D3D3;
 	border: 1px solid black;
 	display: grid;
 	grid-template-columns: 20px 1fr 1fr 1fr 20px;
@@ -67,11 +58,23 @@ p{
 	
 }
 
+.one,
+.three{
+	background:#C0C0C0;
+}
+
+.three p,
+.one p{
+	color:#D3D3D3;
+}
+
 .square p{
-	border:1px solid blue;
+	
 	grid-column: 2/5;
 	grid-row: 3/5;
 	font-size: 38px;
+	padding:8px;
+	background:
 	
 }
 
@@ -116,19 +119,22 @@ p{
 }
 
 #abs {
-	width: 29%;
+	width: 100%;
 	position: absolute;
-	top:30%;
+	top:10%;
 	text-align: center;
+	background:transparent;
+	left:0;
+	left:0%;
 }
 
 #abs span{
 	color:black;
 	font-size: 2.5em;
 	text-align: center;
-	background: white;
+	background: #696969;
+	display:inline-block;
+	padding:8px;
 }
 
-#abs span:last-of-type{
-	
-}
+
