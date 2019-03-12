@@ -19,9 +19,29 @@
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	}
-.col- {
+[class*="col-"]{
 	background:white;
 	border:1px solid black;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+[class*="col-"] h1 {
+	grid-column: 3/6;
+	grid-row: 3/5;
+	border:1px solid blue;
+	background: rgb(98, 99, 99);
+}
+
+h1	{
+	font-family: 'Srisakdi', cursive;
+	font-size: 30px;
+}
+
+p{
+	font-family: 'Sniglet', cursive;
+	font-size: 20px;
 }
 
 #main{
@@ -35,14 +55,14 @@
 	background: lightgrey;
 	border: 1px solid black;
 	display: grid;
-	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-columns: 20px 1fr 1fr 1fr 20px;
 	grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
 .square p{
 	border:1px solid blue;
-	grid-column: 2/span 3;
-	grid-row: 3/span 1;
+	grid-column: 2/span 4;
+	grid-row: 3/span 2;
 }
 
 #footer{
@@ -73,6 +93,5 @@
 	border: 1px solid black;
 	grid-column: 2/3;
 	grid-row: 4;
-	background: lightcoral;
-	
+	background: lightcoral;	
 }
