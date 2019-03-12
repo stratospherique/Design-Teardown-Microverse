@@ -4,10 +4,10 @@
 
 #container {
     display: grid;
-    height:2000px;
+    /* height:2000px; */
    /*  grid-auto-rows: 80px 2000px 100px; */
     /* grid-template-rows: 80px 2000px 100px; */
-    grid-template-rows: 
+    grid-template-rows: 80px 150vh 550px;
 }
 
 #container>div{
@@ -19,11 +19,12 @@
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-row:1/2;
+	
 }
 
 
 [class*="col-"]{
-	background:white;
+	background: rgb(115, 115, 116);
 	border:1px solid black;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -38,11 +39,13 @@
 }
 
 h1	{
+	margin: 0;
 	font-family: 'Srisakdi', cursive;
 	font-size: 30px;
 }
 
 p{
+	margin: 0;
 	font-family: 'Sniglet', cursive;
 	font-size: 20px;
 }
@@ -50,7 +53,7 @@ p{
 #main{
 	display:grid;
 	grid-template-columns: 1fr 1fr;
-	
+	grid-row: 2/3;
 }
 
 .square{
@@ -71,7 +74,7 @@ p{
 #footer{
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
-
+	grid-row: 3/4;
 }
 
 #footer div{
@@ -81,20 +84,33 @@ p{
 
 [class*="f-box-"] {
 	display: grid;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 20% 10% 10% 10% 10% 10% 10% 20%;
+	grid-template-columns: 30px 1fr 1fr 1fr 30px;
 }
 
 [class*="f-box-"] h1 {
 	border:1px solid brown;
-	grid-row: 2/3;
-	grid-column: 2/3;
+	grid-row: 2/4;
+	grid-column: 3/4;
 	background: rgb(38, 131, 161);
+	
 }
 
 [class*="f-box-"] p{
 	border: 1px solid black;
-	grid-column: 2/3;
-	grid-row: 4;
-	background: lightcoral;	
+	grid-column: 2/5;
+	grid-row: 5/7;
+	background: lightcoral;
+		
+}
+
+#abs {
+	width: 250px;
+	position: absolute;
+	top:100px;
+	left: 41%;
+}
+
+#abs p{
+	color: white;
 }
