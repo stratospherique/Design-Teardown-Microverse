@@ -7,7 +7,7 @@
     /* height:2000px; */
    /*  grid-auto-rows: 80px 2000px 100px; */
     /* grid-template-rows: 80px 2000px 100px; */
-    grid-template-rows: 160px 150vh 550px;
+    grid-template-rows: 160px auto 550px;
 }
 
 #container>div{
@@ -116,12 +116,19 @@ p{
 }
 
 #abs {
-	width: 250px;
+	width: 29%;
 	position: absolute;
-	top:100px;
-	left: 41%;
+	top:30%;
+	text-align: center;
 }
 
-#abs p{
-	color: white;
+#abs span{
+	color:black;
+	font-size: 2.5em;
+	text-align: center;
+	background: white;
+}
+
+#abs span:last-of-type{
+	
 }
