@@ -95,17 +95,44 @@ p{
 }
 
 .f-box-3{
-	background: rgb(233, 232, 232);
+	background: rgb(206, 200, 200);
+	color:white;
+}
+.f-box-3 :nth-child(1){
+	background: rgb(241, 241, 241);
+	}
+	
+.f-box-3 :nth-child(2){
+		background: #f5f2f2;
 }
 
 .f-box-2 {
-	background:rgb(122, 122, 122);
+	background:#696969;
+	color:white;
 }
+
+.f-box-2 :nth-child(1){
+	background: #C0C0C0;
+	}
+	
+	.f-box-2 :nth-child(2){
+		background: #e7e6e6;
+		}
 
 .f-box-1 {
-
-	background: #C0C0C0;
+color:white;
+background-color:rgb(175, 171, 171);
 }
+
+.f-box-1 :nth-child(1){
+	background: rgb(219, 216, 216);
+	}
+	
+	.f-box-1 :nth-child(2){
+		background: #e7e6e6;
+}
+
+
 
 [class*="f-box-"] {
 	display: grid;
@@ -115,7 +142,7 @@ p{
 }
 
 [class*="f-box-"] h1 {
-	border:1px solid brown;
+	border:1px solid black;
 	grid-row: 2/4;
 	grid-column: 2/5;
 	background: rgb(192, 189, 189);
