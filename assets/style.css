@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-#container {
+.container {
 	display: grid;
 	position: relative;
     /* height:2000px; */
@@ -13,7 +13,7 @@
 
 
 
-#header{
+.header{
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-row:1/2;
@@ -41,7 +41,7 @@ p{
 	font-size: 20px;
 }
 
-#main{
+.main{
 	display:grid;
 	grid-template-columns: 1fr 1fr;
 	grid-row: 2/3;
@@ -83,13 +83,13 @@ p{
 	
 }
 
-#footer{
+.footer{
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-row: 3/4;
 }
 
-#footer div{
+.footer div{
 	
 	border:1px solid black;
 }
@@ -163,7 +163,7 @@ background-color:rgb(175, 171, 171);
 		
 }
 
-#abs {
+.abs {
 	width: 100%;
 	position: absolute;
 	top:10%;
@@ -173,7 +173,7 @@ background-color:rgb(175, 171, 171);
 	left:0%;
 }
 
-#abs span{
+.abs span{
 	color:black;
 	font-size: 2.5em;
 	text-align: center;
