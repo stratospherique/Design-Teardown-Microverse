@@ -22,7 +22,7 @@
 
 
 [class*="col-"]{
-	background:	#DCDCDC;
+	background:	rgb(233, 232, 232);
 	border:1px solid black;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -68,6 +68,11 @@ p{
 	color:#D3D3D3;
 }
 
+.four p,
+.two p{
+	color:rgb(233, 232, 232);
+}
+
 .square p{
 	
 	grid-column: 2/5;
@@ -85,8 +90,21 @@ p{
 }
 
 #footer div{
-	background:lightblue;
+	
 	border:1px solid black;
+}
+
+.f-box-3{
+	background: rgb(233, 232, 232);
+}
+
+.f-box-2 {
+	background:rgb(122, 122, 122);
+}
+
+.f-box-1 {
+
+	background: #C0C0C0;
 }
 
 [class*="f-box-"] {
@@ -100,7 +118,7 @@ p{
 	border:1px solid brown;
 	grid-row: 2/4;
 	grid-column: 2/5;
-	background: rgb(38, 131, 161);
+	background: rgb(192, 189, 189);
 	font-size: 45px;
 	color: white;
 	padding-top: 22px;
@@ -112,7 +130,7 @@ p{
 	border: 1px solid black;
 	grid-column: 2/5;
 	grid-row: 5/8;
-	background: lightcoral;
+	background: rgb(199, 197, 197);
 	padding-top: 18px;
 	
 		
